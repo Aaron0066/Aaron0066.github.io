@@ -80,16 +80,16 @@
         </p>
 
     </footer>
+    <script>
+        function validateHTML() {
+            let validatorURL = "https://validator.w3.org/check?uri=" + encodeURIComponent(window.location.href);
+            window.open(validatorURL, "_blank");
+        }
+    
+        function validateCSS() {
+            let validatorURL = "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(window.location.href);
+            window.open(validatorURL, "_blank");
+        }
+    </script>
 </body>
-<script>
-    function validateHTML() {
-        let validatorURL = "https://validator.w3.org/check?uri=" + encodeURIComponent(window.location.href);
-        window.open(validatorURL, "_blank");
-    }
-
-    function validateCSS() {
-        let validatorURL = "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(window.location.href);
-        window.open(validatorURL, "_blank");
-    }
-</script>
 </html>
