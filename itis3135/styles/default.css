@@ -1,24 +1,27 @@
-body{
+/* General Styles */
+body {
     background-color: lightslategrey;
     text-align: center;
-    color:antiquewhite;
+    color: antiquewhite;
     font-family: monospace;
 }
 
 a {
-    color:antiquewhite;
+    color: antiquewhite;
     text-decoration: none;
 }
 
 a:hover {
     color: wheat;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
+
 main {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 h2 {
@@ -31,4 +34,36 @@ figure {
 
 figcaption {
     font-style: italic;
+}
+
+
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    body {
+        background-color: darkslategrey;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    body {
+        background-color: slategray;
+    }
+    main {
+        width: 95%;
+        max-width: 900px;
+    }
+}
+
+
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    body {
+        background-color: dimgray;
+    }
+    main {
+        width: 98%;
+        max-width: 100%;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
 }
