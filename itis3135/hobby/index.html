@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Hobby</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(92, 81, 160);
+            color: #333;
+        }
+
+        header {
+            background-color: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .active {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .figure-container {
+            text-align: center;
+        }
+
+        .figure-container figcaption {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Soccer: My Favorite Hobby</h1>
+        <nav>
+            <a href="#" onclick="showSection('what')">What</a>->
+            <a href="#" onclick="showSection('who')">Who</a>->
+            <a href="#" onclick="showSection('when')">When</a>->
+            <a href="#" onclick="showSection('where')">Where</a>->
+            <a href="#" onclick="showSection('how')">How</a>->
+            <a href="#" onclick="showSection('why')">Why</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="what" class="active">
+            <h2>What is Soccer?</h2>
+            <p>Soccer is a team sport played between two teams of eleven players with a round ball. It is the most popular sport in the world.</p>
+            <p>In soccer, players aim to score goals by getting the ball into the opposing team's goal. It's a game of skill, strategy, and teamwork.</p>
+            <div class="figure-container">
+                <figure>
+                    <img src="images/socceronfield.jpg" alt="Soccer Ball">
+                    <figcaption>A soccer ball ready for a game</figcaption>
+                </figure>
+                <p> A close-up image of a soccer ball on the field, captured during a match.</p>
+            </div>
+        </section>
+
+        <!-- Who Section -->
+        <section id="who">
+            <h2>Who Plays Soccer?</h2>
+            <p>Soccer is played by people of all ages and skill levels. It is a popular sport among children, teenagers, and adults alike.</p>
+            <p>From local clubs to international competitions, soccer brings people together for fun and competition.</p>
+            <div class="figure-container">
+                <figure>
+                    <img src="images/improve-your-soccer-skills_hero.jpg" alt="Soccer Players">
+                    <figcaption>Young soccer players practicing together</figcaption>
+                </figure>
+                <p>A group of young players practicing soccer, learning the basics of the game.</p>
+            </div>
+        </section>
+
+        <!-- When Section -->
+        <section id="when">
+            <h2>When to Play Soccer</h2>
+            <p>Soccer can be played year-round, but the best time to play depends on your location. In some regions, winter can be challenging due to snow, while others have year-round warm weather.</p>
+            <p>Soccer leagues typically run during the spring and fall seasons, with tournaments often taking place in the summer.</p>
+            <div class="figure-container">
+                <figure>
+                    <img src="images/sunset-and-stadium-lights-photo.jpg" alt="Soccer Season">
+                    <figcaption>The ideal soccer season: Spring and Fall</figcaption>
+                </figure>
+                <p>A vibrant soccer field during the spring season, with players on the field.</p>
+            </div>
+        </section>
+
+        <!-- Where Section -->
+        <section id="where">
+            <h2>Where to Play Soccer</h2>
+            <p>Soccer can be played almost anywhere: parks, streets, and specially designed stadiums. However, professional matches take place in large stadiums.</p>
+            <p>Local soccer fields are great for casual games, while international tournaments are held in world renowned stadiums.</p>
+            <div class="figure-container">
+                <figure>
+                    <img src="images/stadium-night-match-stockcake.jpg" alt="Soccer Stadium">
+                    <figcaption>World-class soccer stadium</figcaption>
+                </figure>
+                <p>A panoramic view of a grand soccer stadium during an international match.</p>
+            </div>
+        </section>
+
+        <!-- How Section -->
+        <section id="how">
+            <h2>How to Play Soccer</h2>
+            <p>To play soccer, you need a ball, two teams, and a field. The game starts with a kickoff, and players pass, dribble, and shoot the ball to score goals.</p>
+            <p>Proper technique, strategy, and teamwork are essential to winning matches. Training regularly helps improve skills.</p>
+            <div class="figure-container">
+                <figure>
+                    <img src="images/xavi-soccer-passing.jpg" alt="Soccer Training">
+                    <figcaption>Soccer player practicing skills</figcaption>
+                </figure>
+                <p>One of the greats passing the ball.</p>
+            </div>
+        </section>
+
+        <!-- Why Section -->
+        <section id="why">
+            <h2>Why Play Soccer?</h2>
+            <p>I play because i love the sport, plus soccer offers numerous benefits: physical fitness, teamwork, and mental stimulation. It helps players develop discipline, coordination, and communication skills.</p>
+            <p>Additionally, soccer fosters community, bringing people from all backgrounds together through a shared love of the sport.</p>
+            <div class="figure-container">
+                <figure>
+                    <img src="images/teambuildingteam.jpg" alt="Soccer Teamwork">
+                    <figcaption>Soccer teamwork: Communication is key</figcaption>
+                </figure>
+                <p>A soccer team communicating during a match, showing teamwork and strategy.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed by Your Design Firm | <a href="aaronfirm/">Agile Snake Enterprises</a></p>
+    </footer>
+
+    <script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll("section");
+        sections.forEach(function (section) {
+            section.classList.remove("active");
+        });
+        document.getElementById(sectionId).classList.add("active");
+    }
+
+    </script>
+
+</body>
+</html>
