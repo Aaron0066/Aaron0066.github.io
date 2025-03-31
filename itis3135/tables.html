@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Sowah's Agile Snake || Employee Tables</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="Stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>HTML Tables</h2>
+
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Aaron Sowah - aaronsowah@gmail.com - 5 years</li>
+            <li>Onwaka Kim - onwakaKim@yahoo.com - 10 years</li>
+            <li>Xavi Hernandez - xhernandez@agilesnake.com - 3 years</li>
+            <li>Paul Pogba - Ppogba@agilesnake.com - 8 years</li>
+            <li>Chris Brown - cbrown@gmail.com - 15 years</li>
+            <li>Angel reese - angeler@agilesnake.com - 6 years</li>
+            <li>Leonel Messi - Messi@yahoo.com - 12 years</li>
+        </ol>
+
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Aaron Sowah</td>
+                <td>aaronsowah@gmail.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Onwaka Kim</td>
+                <td>onwakaKim@yahoo.com</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Xavi Hernandez</td>
+                <td>xhernandez@agilesnake.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Paul Pogba</td>
+                <td>Ppogba@agilesnake.com</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Chris Brown</td>
+                <td>cbrown@gmail.com</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Angel reese</td>
+                <td>angeler@agilesnake.com</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Leonel Messi</td>
+                <td>Messi@yahoo.com</td>
+                <td>12</td>
+            </tr>
+        </table>
+
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Management</td>
+                    <td>Aaron Sowah</td>
+                    <td>Aaron Sowah@gmail.com</td>
+                    <td>5</td>
+                    <td>$4,000</td>
+                </tr>
+                <tr>
+                    <td>Onwaka Kim</td>
+                    <td>onwakaKim@yahoo.com</td>
+                    <td>10</td>
+                    <td>$6,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Development</td>
+                    <td>Xavi Hernandez</td>
+                    <td>xhernandez@agilesnake.com </td>
+                    <td>3</td>
+                    <td>$3,500</td>
+                </tr>
+                <tr>
+                    <td>Paul Pogba</td>
+                    <td>Ppogba@agilesnake.com</td>
+                    <td>8</td>
+                    <td>$5,500</td>
+                </tr>
+                <tr>
+                    <td>Chris Brown</td>
+                    <td>cbrown@gmail.com</td>
+                    <td>15</td>
+                    <td>$7,500</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Support</td>
+                    <td>Angel reese</td>
+                    <td>angeler@agilesnake.com</td>
+                    <td>6</td>
+                    <td>$4,200</td>
+                </tr>
+                <tr>
+                    <td>Leonel Messi</td>
+                    <td>Messi@yahoo.com</td>
+                    <td>12</td>
+                    <td>$5,800</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Years of Service</th>
+                    <th>59</th>
+                    <th>$36,500</th>
+                </tr>
+            </table>
+        </figure>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script>
+        function validateHTML() {
+            let validatorURL = "https://validator.w3.org/check?uri=" + encodeURIComponent(window.location.href);
+            window.open(validatorURL, "_blank");
+        }
+
+        function validateCSS() {
+            let validatorURL = "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(window.location.href);
+            window.open(validatorURL, "_blank");
+        }
+    </script>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            HTMLInclude();
+        });
+    </script>
+
+</body>
+</html>
