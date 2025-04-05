@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaron Sowah Agile Snake 🐍 || ITIS3135 BYO Intro</title>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/default.css" />
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+
+  <main>
+    <div class="container">
+      <h2>BYO Intro</h2>
+      <div class="form-container">
+        <h3>
+          Time to BYO Intro page — please fill out the form below so we can create your own page.
+        </h3>
+
+        <form id="introForm">
+          <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" placeholder="name" value="Aaron Sowah" required />
+
+            <label for="mascot">Mascot:</label>
+            <input id="mascot" name="mascot" type="text" placeholder="mascot" value="Agile Snake" required />
+
+            <label for="image">Image:</label>
+            <input id="image" name="image" type="file" accept=".png, .jpg, .jpeg" />
+
+            <img src="images/default-image.jpg" style="max-width: 250px" alt="default image" />
+
+            <label for="image-caption">Image Caption:</label>
+            <input id="image-caption" name="image-caption" type="text" placeholder="image caption" value="My go-to gear for Agile Snake Escape" required />
+
+            <label for="personal-background">Personal Background:</label>
+            <input id="personal-background" name="personal-background" type="text" placeholder="personal background" value="I'm from Charlotte and I enjoy outdoor adventures." required />
+
+            <label for="professional-background">Professional Background:</label>
+            <input id="professional-background" name="professional-background" type="text" placeholder="professional background" value="Founder of Agile Snake Escape Gear and Web Dev student." required />
+
+            <label for="academic-background">Academic Background:</label>
+            <input id="academic-background" name="academic-background" type="text" placeholder="academic background" value="3rd-year CS major at UNC Charlotte." required />
+
+            <label for="web-dev-background">Background in Web Development:</label>
+            <input id="web-dev-background" name="web-dev-background" type="text" placeholder="background in Web Development" value="Learning HTML, CSS, and JavaScript in ITIS 3135." required />
+
+            <label for="primary-platform">Primary Computer Platform:</label>
+            <input id="primary-platform" name="primary-platform" type="text" placeholder="primary platform" value="Windows" required />
+
+            <label>Courses:</label>
+            <div id="courses-container"></div>
+            <button type="button" id="add-course-btn">Add Course</button>
+
+            <label for="funny-thing">Funny Thing:</label>
+            <input id="funny-thing" name="funny-thing" type="text" placeholder="funny thing" value="I built a mini grappling hook as a keychain." />
+
+            <label for="additional">Anything Else:</label>
+            <input id="additional" name="additional" type="text" placeholder="anything else" value="Always exploring new ideas!" />
+
+            <label for="understand-checkbox">
+              <input type="checkbox" id="understand-checkbox" name="understand-checkbox" value="Yes" required />
+              I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+            </label>
+
+            <br /><br />
+            <input type="submit" value="Submit" />
+            <input type="reset" id="resetButton" value="Reset" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div id="result-container"></div>
+  </main>
+
+  <div data-include="components/footer.html"></div>
+
+  <script src="scripts/include.js"></script>
+  <script src="scripts/survey.js"></script>
+</body>
+</html>
