@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const additional = document.getElementById("additional").value;
 
         const courses = [];
-        document.querySelectorAll("input[name='courses[]']").forEach(courseInput => {
+        document.querySelectorAll("input[name='courses[]']").forEach((courseInput) => {
             if (courseInput.value.trim()) {
                 courses.push(courseInput.value.trim());
             }
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <tr><td>Academic Background</td><td>${academicBackground}</td></tr>
             <tr><td>Web Dev Background</td><td>${webDevBackground}</td></tr>
             <tr><td>Primary Computer Platform</td><td>${primaryPlatform}</td></tr>
-            <tr><td>Courses</td><td><ul>${courses.map(course => `<li>${course}</li>`).join("")}</ul></td></tr>
+            <tr><td>Courses</td><td><ul>${courses.map((course) => `<li>${course}</li>`).join("")}</ul></td></tr>
             <tr><td>Funny Thing</td><td>${funnyThing}</td></tr>
             <tr><td>Anything Else</td><td>${additional}</td></tr>
           </table>

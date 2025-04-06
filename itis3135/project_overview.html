@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Overview || Aaron Sowah</title>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/default.css" />
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+  <main class="container">
+    <h2>Project Overview</h2>
+
+    <h3>Application Purpose</h3>
+    <p>
+      This project is a custom-built web application for a local fitness coach, aiming to provide interactive scheduling, class details, and health tips for clients. The website will help promote the coach’s services, streamline communication with current and potential clients, and provide a more professional web presence.
+    </p>
+
+    <h3>Intended Users</h3>
+    <ul>
+      <li>People looking for a personal trainer</li>
+      <li>Current fitness clients who want access to schedules and resources</li>
+      <li>Visitors interested in fitness advice and healthy lifestyle tips</li>
+    </ul>
+
+    <h3>Website Content Overview</h3>
+    <ul>
+      <li>Home: Overview and welcome message</li>
+      <li>About: Info on the trainer and their philosophy</li>
+      <li>Services: Classes offered, pricing, and benefits</li>
+      <li>Schedule: Interactive calendar for session sign-ups</li>
+      <li>Contact: Contact form and location info</li>
+    </ul>
+
+    <h3>Client Information</h3>
+    <ul>
+      <li><strong>Name:</strong> Micheal Onwaka</li>
+      <li><strong>Business:</strong> M.O Performance Coaching</li>
+      <li><strong>Email:</strong>jonwuka@charlotte.edu</li>
+      <li><strong>Phone:</strong> [private]</li>
+    </ul>
+
+    <h3>Wireframe</h3>
+    <figure>
+      <img src="images/Wireframe.png" alt="Wireframe of home page" style="max-width: 600px;" />
+      <figcaption>Homepage Wireframe (Created in Draw.io)
+      <a href="https://app.diagrams.net" target="_blank">View Full Wireframe</a>
+    </figcaption>
+    </figure>
+
+    <h3>Site Map</h3>
+    <figure>
+      <img src="images/Sitemap.png" alt="Site Map Diagram" style="max-width: 600px;" />
+      <figcaption>Site Map (Created in Draw.io)
+      <a href="https://app.diagrams.net" target="_blank">View Full Sitemap</a>
+    </figcaption>
+    </figure>
+
+    <h3>Page Design Details</h3>
+    <ul>
+      <li><strong>Home:</strong> Intro to site and CTA to book sessions. Audience: All. Includes nav, hero image, and CTA button.</li>
+      <li><strong>About:</strong> Bio, experience, and certifications. Audience: Prospective clients. Static content only.</li>
+      <li><strong>Services:</strong> List of training packages. May include pricing table. Includes buttons to book.</li>
+      <li><strong>Schedule:</strong> Interactive calendar with available slots. JavaScript validation for input. Audience: current/potential clients.</li>
+      <li><strong>Contact:</strong> Email form and embedded Google Map. Form validations required for name/email/message.</li>
+    </ul>
+
+    <h3>Dynamic Functionality</h3>
+    <p>
+      The project will use JavaScript and jQuery to add the following dynamic features:
+    </p>
+    <ul>
+      <li>Interactive session calendar (on Schedule page)</li>
+      <li>Form validation using JavaScript (on Contact page)</li>
+      <li>Animated dropdowns for mobile nav (site-wide)</li>
+      <li>Gallery image slider using jQuery plugins (on Services page)</li>
+    </ul>
+    <p>
+      Inspiration from: <a href="https://www.fitnessblender.com/" target="_blank">Fitness Blender</a> and <a href="https://toneitup.com/" target="_blank">Tone It Up</a>.
+    </p>
+  </main>
+
+  <div data-include="components/footer.html"></div>
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+        HTMLInclude();
+    });
+</script>
+</body>
+</html>
