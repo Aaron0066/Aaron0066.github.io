@@ -256,3 +256,79 @@ body {
   p {
     color: antiquewhite;
   }
+
+
+
+
+  .thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .thumbnail-demo {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  
+  .thumbnail-demo:hover,
+  .thumbnail-demo.active {
+    transform: scale(1.1);
+    border-color: #007bff;
+  }
+  
+
+
+
+
+
+  .slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+    text-align: center;
+  }
+  
+  .mySlides img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
