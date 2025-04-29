@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review 1</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Peer Review 1</h2>
+            <div class="project-container">
+                <h3>Pham, Sam</h3>
+                <figure>
+                    <a href="https://webpages.charlotte.edu/spham2/itis3135/project/">
+                        <img src="images/review_project.png" alt="Screenshot of Sam's Project" class="project-image">
+                    </a>
+                    <figcaption>
+                        <a href="https://webpages.charlotte.edu/spham2/itis3135/project/">
+                            Check Out the Website
+                        </a>
+                    </figcaption>
+                </figure>
+
+                <ul>
+                    <li>
+                        <strong>Files and Links:</strong>
+                        <ul>
+                            <li>The link from the ITIS3135 page works perfectly and goes straight to the project site without any problems.</li>
+                            <li>All the navigation links up in the header are working smoothly, no broken links here!</li>
+                            <li>File names are clean and consistent — all lowercase with no spaces, which is great for avoiding future issues.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Design:</strong>
+                        <ul>
+                            <li><strong>Contrast:</strong> The color choices are strong overall and make the text easy to read.</li>
+                            <li><strong>Repetition:</strong> You kept the colors and styling consistent across the whole site, which really ties everything together nicely.</li>
+                            <li><strong>Alignment:</strong> Everything looks neat and centered where it needs to be — the layout feels very organized.</li>
+                            <li><strong>Proximity:</strong> Good job on spacing — the images, headings, and text aren’t crowded, making everything easy to scan through.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Page Structure:</strong>
+                        <ul>
+                            <li>Each page is set up properly with a header, main content area, and footer.</li>
+                            <li>The only thing missing in the header is an <code>h1</code> tag for the site name ("Perpetual Sol").</li>
+                            <li>The page name ("Home") is shown correctly using an <code>h2</code> tag, which is perfect.</li>
+                            <li>The footer looks good — it includes a nav menu and copyright info, just like it should.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Assignment Requirements:</strong>
+                        <ul>
+                            <li>You have a working home page named <code>index.html</code>.</li>
+                            <li>Navigation is consistent across all the pages — easy to move around.</li>
+                            <li>Your external stylesheet is doing its job keeping the design consistent site-wide.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Final Thoughts:</strong>
+                        <ul>
+                            <li>Overall, the site looks super clean, organized, and easy to navigate. You clearly put a lot of effort into keeping things professional and user-friendly. Great work!</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        function validateHTML() {
+            let validatorURL = "https://validator.w3.org/check?uri=" + encodeURIComponent(window.location.href);
+            window.open(validatorURL, "_blank");
+        }
+
+        function validateCSS() {
+            let validatorURL = "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(window.location.href);
+            window.open(validatorURL, "_blank");
+        }
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            HTMLInclude();
+        });
+    </script>
+</body>
+</html>

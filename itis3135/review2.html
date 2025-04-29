@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review 2</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Peer Review 2</h2>
+            <div class="project-container">
+                <h3>Montoya, Andres</h3>
+                <figure>
+                    <a href="https://webpages.charlotte.edu/amontoy6/itis3135/project/home.html">
+                        <img src="images/review1.png" alt="Project Screenshot" class="project-image">
+                    </a>
+                    <figcaption>
+                        <a href="https://webpages.charlotte.edu/amontoy6/itis3135/project/home.html">
+                            View Website
+                        </a>
+                    </figcaption>
+                </figure>
+
+                <ul>
+                    <li>
+                        <strong>Files and Links:</strong>
+                        <ul>
+                            <li>The ITIS3135 page link works correctly.</li>
+                            <li>All navigation links in the header function properly.</li>
+                            <li>File names and organization follow good, clear conventions.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Design:</strong>
+                        <ul>
+                            <li><strong>Contrast:</strong> Some text inside demo code boxes could use stronger contrast for better readability. Also, improving the contrast between page titles and the background would help.</li>
+                            <li><strong>Repetition:</strong> Some headings are centered while others are left-aligned, which feels inconsistent. For example, "The Basics to HTML" is centered but "The Basics to CSS" is not.</li>
+                            <li><strong>Alignment:</strong> Elements across the site are well-aligned and structured neatly.</li>
+                            <li><strong>Proximity:</strong> Spacing between different sections is handled well, keeping everything readable and organized.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Page Elements:</strong>
+                        <ul>
+                            <li>Pages properly include header, main, and footer sections.</li>
+                            <li>The header section is missing an <code>h1</code> tag — it should feature the site name.</li>
+                            <li>Inside the main section, update heading levels: current <code>h1</code> tags should become <code>h2</code>, and <code>h2</code> tags should become <code>h3</code>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Assignment Requirements:</strong>
+                        <ul>
+                            <li>Website includes five functional pages as required.</li>
+                            <li>Has a home page named <code>index.html</code>.</li>
+                            <li>Navigation bar is consistent and works across all pages.</li>
+                            <li>Each of the four additional pages has its own unique content.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Notes:</strong>
+                        <ul>
+                            <li>There’s a warning related to an image size on the home page — resizing the image in a photo editor would solve it.</li>
+                            <li>On the knowledge check page, it would look cleaner if the radio buttons were aligned to the left.</li>
+                            <li>Overall, the site is very well put together. It mainly needs a few minor CSS adjustments to polish it up.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        function validateHTML() {
+            let validatorURL = "https://validator.w3.org/check?uri=" + encodeURIComponent(window.location.href);
+            window.open(validatorURL, "_blank");
+        }
+
+        function validateCSS() {
+            let validatorURL = "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(window.location.href);
+            window.open(validatorURL, "_blank");
+        }
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            HTMLInclude();
+        });
+    </script>
+</body>
+</html>

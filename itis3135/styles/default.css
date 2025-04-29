@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
     background-color: darkslategrey;
@@ -330,5 +333,12 @@ body {
   
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  .project-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
   
