@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaron Sowah's Agile Snake || Drawing</title>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Drawing</h2>
+    <p class="tagline">Stay Swift, Stay Safe with Creative Code.</p>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script>
+    function validateHTML() {
+      let validatorURL = "https://validator.w3.org/check?uri=" + encodeURIComponent(window.location.href);
+      window.open(validatorURL, "_blank");
+    }
+
+    function validateCSS() {
+      let validatorURL = "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(window.location.href);
+      window.open(validatorURL, "_blank");
+    }
+  </script>
+
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      HTMLInclude();
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
+  <script src="scripts/sketch.js"></script>
+</body>
+</html>
